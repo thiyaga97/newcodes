@@ -25,7 +25,9 @@ public class Stepdefinition extends BaseClass
 			driver=  browserLaunch();
 		}catch(Exception e) {
 			e.printStackTrace();
+			
 		}
+		
 	}
 	
 	@After
@@ -38,7 +40,8 @@ public class Stepdefinition extends BaseClass
 	public void launch_Facebook_application() throws IOException 
 	
 	{
-		 config = new ConfigReader();				
+		 config = new ConfigReader();
+		 
 		 urlLaunch(config.getApplicationUrl());
 	}
 
